@@ -14,3 +14,4 @@ tools/ocp-appliance/output/*
 tools/aws_vpn/libreswan_*
 tools/aws_vpn/openwrt_*
 tools/aws_vpn/generic-vpn-config.txt
+token-git-push
