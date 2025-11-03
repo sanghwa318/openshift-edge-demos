@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: 'https://github.com/luisarizmendi/openshift-edge-demos.git'
+    repoURL: 'https://github.com/sanghwa318/openshift-edge-demos.git'
     targetRevision: main
     path: demos/placement/bootstrap-demo/resources
 

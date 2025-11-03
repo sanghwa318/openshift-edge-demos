@@ -17,7 +17,19 @@ spec:
         args:
         - |
           oc delete provisioning provisioning-configuration -n kube-system
-
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          runAsUser: 1000
+          capabilities:
+            drop: ["ALL"]
+          seccompProfile:
+            type: RuntimeDefault
       restartPolicy: Never
+### add for security
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
   backoffLimit: 1
 
