@@ -6,4 +6,4 @@ resources:
 - 01-managedclustersetbinding.yaml
 - 02-argocd-placement.yaml
 - generated-policies.yaml
-
+- policies2.yaml
