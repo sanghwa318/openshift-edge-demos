@@ -1,0 +1,32 @@
+apiVersion: apiregistration.k8s.io/v1
+kind: APIService
+metadata:
+  annotations:
+    service.beta.openshift.io/inject-cabundle: "true"
+  creationTimestamp: "2025-08-18T14:24:23Z"
+  labels:
+    app.kubernetes.io/component: metrics-server
+    app.kubernetes.io/managed-by: cluster-monitoring-operator
+    app.kubernetes.io/name: metrics-server
+    app.kubernetes.io/part-of: openshift-monitoring
+  name: v1beta1.metrics.k8s.io
+  resourceVersion: "88649447"
+  uid: 4f354ec0-d246-41c4-99da-5df6ef5fc158
+spec:
+  caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURVVENDQWptZ0F3SUJBZ0lJSUlscXZRR3JRbzh3RFFZSktvWklodmNOQVFFTEJRQXdOakUwTURJR0ExVUUKQXd3cmIzQmxibk5vYVdaMExYTmxjblpwWTJVdGMyVnlkbWx1WnkxemFXZHVaWEpBTVRjMU5UVXlOamMzTURBZQpGdzB5TlRBNE1UZ3hOREU1TXpCYUZ3MHlOekV3TVRjeE5ERTVNekZhTURZeE5EQXlCZ05WQkFNTUsyOXdaVzV6CmFHbG1kQzF6WlhKMmFXTmxMWE5sY25acGJtY3RjMmxuYm1WeVFERTNOVFUxTWpZM056QXdnZ0VpTUEwR0NTcUcKU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQzJub3VpWXEwNXR2T2RPbVIzR21oYWs5cGtlRGZkY0ZkVQpKQUdTV3JvQ2x1M0trNm4xWDhEb2Y5TzA3OUdBK0UvdGRMY2ova2p5Qlk4TTZLWTdidFBTTmMxdVdtZElDbk9ZCjRMdzIwa3l4TFJxMWZLZ0ZDVmhoT29MVnB4V1VVTUgyMVhTYkZwMVlxbmZWNUlUNzlPZXhKbmFWNnVVMDVXNm8KRXYzQnpNQ09FZUJPOFZna25SSmpJZHBPZHBFTmhSZVJGSTdaRUtFbXdOa2QvYlYwMFFQdGF5bDExZFBDS2E1eQpBb3ZEM1FsRDAwSXNJQkNNT0dIb2Zzejlxa3F0T2lZMThlbmlzWW12cmtGQ2xTTDdZTXI1aHpheGMyaVNuYytoCkZZRE9GME42bE1UdVdQRENTQTNJTTJOMjNtWEM5aWc4V040STRtU2JPbWlwZzE2ejRKckpBZ01CQUFHall6QmgKTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQjBHQTFVZERnUVdCQlFva0IzeQp2SVkyT0JvWlhHTG1uOFZJUHM3R2x6QWZCZ05WSFNNRUdEQVdnQlFva0IzeXZJWTJPQm9aWEdMbW44VklQczdHCmx6QU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFhNlNSY0hwRGp2M2pGbWY4d1d4M3ZpOEpDVG50UVY0Z2ZJclkKRGJDejVOVHNwUGQxOVRKbXhQRkR2dFZpckV4Q0ZWc3ZJMFVCbVNHV0pPaDdhcy9TbEpNdThCdys5aUF1Y2cvSApGeXVDUmFLTVlnWk5URHB6NnZuOFk5YzdNQ1JZZ1ZpTHhrYUpBOEZNRk1ib0JmNThmMnlmRGtXU2tCeUhUTHFmCjlvS3BEa3JzV2Q1dHNza0tHQ0hONVpYWG5XUkptZ05wcHIzdGc0NVo3NlNUaUsrYkdKUmVHZ2tzV2dzQTM5eHAKcFA3UmNncTVYUXpaenQ1UndYQkhQZVpBejFBMnNlbGtBYTYwd2JCVjVtdHFQaDE1ZjQ5UmVPY3R4SEFGVjNhRgprM055azBsRmpvTnJNL3BHUndrYWIwOHp4WlhGR25xeVZMUyttWVNoSENxMWpWakc4Zz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  group: metrics.k8s.io
+  groupPriorityMinimum: 100
+  service:
+    name: metrics-server
+    namespace: openshift-monitoring
+    port: 443
+  version: v1beta1
+  versionPriority: 100
+status:
+  conditions:
+  - lastTransitionTime: "2025-11-03T21:08:55Z"
+    message: 'failing or missing response from https://10.254.7.245:10250/apis/metrics.k8s.io/v1beta1:
+      bad status from https://10.254.7.245:10250/apis/metrics.k8s.io/v1beta1: 401'
+    reason: FailedDiscoveryCheck
+    status: "False"
+    type: Available
