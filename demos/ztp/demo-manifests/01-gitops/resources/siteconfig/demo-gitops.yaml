@@ -8,11 +8,11 @@ metadata:
   name: "sno-gitops"
   namespace: "sno-gitops"
 spec:
-  baseDomain: "sandbox3039.opentlc.com"
+  baseDomain: "ocp.lsh"
   pullSecretRef:
     name: "demo-ztp-gitops-pull-secret"
   clusterImageSetNameRef: "img4.16.5-multi-appsub"
-  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzR2ixpaJIecsCunvgJjg18NEFPPTYKewSa9eD6GMptHNYyybIqYtng/2/AsNSZ9cp54fCqt5QUIsD7OfFJQnN7/1z7sHyeEM5t2PhK1GOykq2klga//HlvCgK3DJTy9az+wq5JVyHLUZnRGtgOQRgYLox2CadThBs2aM8QwSXCDjhIjgApwEvoFuH9yRFAervBNykvIiEx+K8p1w2vkntCn8XsiuZ4xRwNuttiudysCHYq9EkdOHIEt6a+ktR7cxpD8uAoxym4UitoHynCy6Jp7Ji0GNaVNhsE9dkcXjQDmP7s+IRs7s83Om4dDpXzhTAol9++MvHsDjYtEUN5Se/N44jjwyeVXivzF7IjZg1WHJgb1gYiYRUoBhzcqzO8Vft9xdjpS8sZ/46+CQA2XPEw5uxP5iBFHgmzbOYl2GPMr67qK19gtAduXvofSMDiXGkzIPQoXn6xnQjl6QHrn/uCk1q4+76jqYZcRzGj0NNMx4Viu+zws9GLMK9M7arym8="
+  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDX0RUJj0jroMQyUWpn5qJGHGFqNwGfSvETccfmZVN6L/FtKS0FwKtyhL+G9c+xBO2DM38qSLRDzL5/ZMd/D9N+W3NvSI0T0GMJc1RXBf1gKH3kCpVyaeujyGBbrnAL3YpDjoycWRjdVnSuXUP2exkmreZyaCLuYcnTbmgx+6GUzHsVozqQpzcteBo/e9IEVe8NhEHmoO2Ghv/xBHD/olk/wJ3hiNqltNl9uskSnlHxK28CfgeF8ExMnLnIDK9PwfxWhORTO3TaMGaCUAJjYorpgxEbpkZ1gm1o2w7rvoylgDu3XQj9CUUFlC+ouZG5DmbFKvy0auZzgMv0SKz582R64rLh0wy95XqgiRDlUH6OJc5koV1birsrqut/sRshqzVbnfZ7Ok7v0890wXIAa56OF8laliOZJEFpDKpJ2Mq1EHe8RYeDXZUq6i/aJYnAft3JqWbwZxPJaX8bT+jErQjENJWQ4OpYWtzJxLVbUWvglHFv/Xwu9TvwJSi8fQ6leA8="
   clusters:
   - clusterName: "sno-gitops"
     networkType: "OVNKubernetes"
@@ -59,15 +59,15 @@ spec:
     crTemplates:
       KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
     nodes:
-      - hostName: "sno-2.sandbox3039.opentlc.com"
+      - hostName: "sno-2.ocp.lsh"
         role: "master"
         # Optionally; This can be used to configure desired BIOS setting on a host:
         #biosConfigRef:
         #  filePath: "example-hw.profile"
-        bmcAddress: "redfish-virtualmedia+http://bmc.sno-gitops.sandbox3039.opentlc.com:8000/redfish/v1/Systems/c9413a8c-cfa2-45af-a779-81529ed850dc"
+        bmcAddress: "redfish-virtualmedia+http://bmc.sno-gitops.ocp.lsh:8000/redfish/v1/Systems/c9413a8c-cfa2-45af-a779-81529ed850dc"
         bmcCredentialsName: 
           name: "demo-ztp-gitops-bmc-secret-1"
-        bootMACAddress: "52:54:00:9b:e9:52"
+        bootMACAddress: "52:54:00:51:ca:80"
         # Use UEFISecureBoot to enable secure boot
         bootMode: "UEFI"
         #rootDeviceHints:
@@ -118,7 +118,7 @@ spec:
         nodeNetwork:
           interfaces:
             - name: eth0
-              macAddress: "52:54:00:9b:e9:52"
+              macAddress: "52:54:00:51:ca:80"
           config:
             interfaces:
               - name: eth0
