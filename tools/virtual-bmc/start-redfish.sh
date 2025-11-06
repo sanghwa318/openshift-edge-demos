@@ -18,10 +18,10 @@ else
   echo "sushy-tools container does not exist. Creating and running it..."
   sudo podman run -d --privileged --rm --name sushy-tools \
     -v "$CONFIG_PATH:/etc/sushy/sushy-emulator.conf:Z" \
-    -v /var/run/libvirt:/var/run/libvirt:Z \
     -e SUSHY_EMULATOR_CONFIG=/etc/sushy/sushy-emulator.conf \
     -p 8000:8000 \
     quay.io/metal3-io/sushy-tools:latest sushy-emulator
+#    -v /var/run/libvirt:/var/run/libvirt:Z \
 fi
 
 

@@ -64,7 +64,7 @@ spec:
         # Optionally; This can be used to configure desired BIOS setting on a host:
         #biosConfigRef:
         #  filePath: "example-hw.profile"
-        bmcAddress: "redfish-virtualmedia+http://bmc.sno-gitops.ocp.lsh:8000/redfish/v1/Systems/c9413a8c-cfa2-45af-a779-81529ed850dc"
+        bmcAddress: "redfish-virtualmedia+http://bmc.sno-gitops.ocp.lsh:8000/redfish/v1/Systems/407a5c3c-8d97-4cdf-8aa5-ec25fdec1e3f"
         bmcCredentialsName: 
           name: "demo-ztp-gitops-bmc-secret-1"
         bootMACAddress: "52:54:00:51:ca:80"
