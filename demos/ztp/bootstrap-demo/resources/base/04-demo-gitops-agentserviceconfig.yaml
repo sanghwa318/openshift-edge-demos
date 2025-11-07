@@ -28,5 +28,5 @@ spec:
     - cpuArchitecture: x86_64
       openshiftVersion: "4.18.27"
       version: "418.94.202510081222-0"
-      rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/4.18.27/rhcos-4.18.27-x86_64-live-rootfs.x86_64.img 
-      url: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/4.18.27/rhcos-4.18.27-x86_64-live.x86_64.iso 
+      rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/latest/rhcos-live-rootfs.x86_64.img
+      url: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/latest/rhcos-live.x86_64.iso
