@@ -26,7 +26,7 @@ spec:
         storage: 50Gi
   osImages:
     - cpuArchitecture: x86_64
-      openshiftVersion: "4.18.9"
-      version: "4.18.0-okd-scos.9"
-      rootFSUrl: http://192.168.3.49:8080/okd418/fedora-coreos-39.20231101.3.0-live-rootfs.x86_64.img
-      url: http://192.168.3.49:8080/okd418/fedora-coreos-39.20231101.3.0-live.x86_64.iso
+      openshiftVersion: "4.18.27"
+      version: "418.94.202510081222-0"
+      rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/4.18.27/rhcos-4.18.27-x86_64-live-rootfs.x86_64.img 
+      url: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.18/4.18.27/rhcos-4.18.27-x86_64-live.x86_64.iso 

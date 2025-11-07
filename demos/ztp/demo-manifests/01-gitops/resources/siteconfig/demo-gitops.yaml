@@ -11,7 +11,7 @@ spec:
   baseDomain: "ocp.lsh"
   pullSecretRef:
     name: "demo-ztp-gitops-pull-secret"
-  clusterImageSetNameRef: "img4.18.9-x86-64-appsub"
+  clusterImageSetNameRef: "img4.18.27-x86-64-appsub"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCq0hZtNj2QXlf5DgEFfW9YVjQovHJIH2/L85K08qDXhJKZS+2SNQUOEDiXSUZqr6j9nOIlZiJg060B0W9Y/vm5g/UikUy5wyd4JnkLa0x0VQuzsH5f7YXBXviIrlOrLAg4g9P6dpYB69gW92pSKhSkan43J4vNQSecQSb3WZbNyQOcwr0ONaK1b7T/fy4GD6nXLq0/RNYAXJLlkUmz1LeNwJQY/OfOcEPA5yOdmpqJ0F9PKHXbWkltFvcfERgCMaRtCeXSJDdQebxVFGoCDo9ELDJNxCFlb2bW/KgHBaQ3T0Gu2n8m73u3k/ruvJ40uV8qXmef1Wb5Bumo7OROaJC5qFpmtsaeEt0KSmhW4S7tYZoTQvHZ5Uei5YtfhWPzUTJCG2o6p3Q9JccG+jsetcw4Owp7OZTiDww7PPxWG9Bvf6Es+SArbZeM16djKBxM465uiEMC716UqfZJrTUAUstB2fTMgIotzM2/vVLrlxPzhkYCcET5lszRl2aVssRxc4k="
   clusters:
   - clusterName: "sno-gitops"
