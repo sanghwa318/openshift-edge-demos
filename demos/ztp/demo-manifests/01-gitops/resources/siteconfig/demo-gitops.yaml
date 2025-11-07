@@ -127,18 +127,16 @@ spec:
                 ipv4:
                   enabled: true
                   address:
-                    - ip: 192.168.100.3
+                    - ip: 192.168.3.44
                       prefix-length: 24
                   dhcp: false
             dns-resolver:
               config:
-                search:
-                - example.com
                 server:
-                - 8.8.8.8
+                - 192.168.3.49
             routes:
               config:
               - destination: 0.0.0.0/0
-                next-hop-address: 192.168.100.1
+                next-hop-address: 192.168.3.1
                 next-hop-interface: eth0
                 table-id: 254
